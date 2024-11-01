@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    min-height: 700px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    min-width: 500px;
+}
+
+.gin-image {
+    width: 300px;
+}
+
+.h-line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    .h-line {
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
