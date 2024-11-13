@@ -1,0 +1,136 @@
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 1400px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+
+}
+
+.asperol-image {
+    width: 500px;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gin-and-tonic-image {
+    width: 500px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.fig-and-tonic-image {
+    width: 500px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+li {
+    margin-left: 20px;
+    font-size: 0.75rem;
+}
+
+.gin-and-tonic-text {
+    grid-column: 3 / 5;
+    grid-row:  2 / 3;
+
+}
+
+.asperol-text {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+
+.fig-and-tonic-text {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+@media screen and (max-width: 1215px) {
+    .container {
+        width: 700px;
+        grid-template-columns: [first] 30px [line2] 300px [line3] 300px [line4] 30px;
+    }
+    
+    .gin-and-tonic-image {
+        width: 300px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .fig-and-tonic-image {
+            width: 300px;
+    }
+
+    .asperol-image {
+        width: 300px;
+    }
+
+    .gin-and-tonic-text {
+        grid-column: 3 / 4;
+        grid-row:  2 / 3;
+    }
+
+    .fig-and-tonic-text {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .asperol-text {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .container {
+        width: 390px;
+        height: 1700px;
+        gap: 20px 0;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        grid-template-columns: [first] 30px [line2] 330px [line3] 30px;
+    }
+
+    .gin-and-tonic-image {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .gin-and-tonic-text {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .fig-and-tonic-image {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .fig-and-tonic-text {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    .asperol-image {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+
+    .asperol-text {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+
+
+}
