@@ -26,6 +26,30 @@
             <a href="contact.html" class="deco">Contact</a>
         </nav>
     </header>
+    <main>
+        <form class="container" action="mailto:example@example.com" method="POST" enctype="text/plain">
+            <div class="headline-text">
+                <h3>Reservations</h3>
+                <br>
+                <label for="guest-name">Make an online reservation by filling in your contact information below:</label>
+                <br>
+                <input class="text-field field-margin" type="text" name="guest-name" id="guest-name" placeholder="First name">
+                <br>
+                <input class="text-field" type="text" name="guest-name" id="guest-name" placeholder="Last name">
+                <br>
+                <label for="email-address"></label>
+                <br>
+                <input class="text-field" type="text" name="email-address" id="email-address" placeholder="E-mail" required>
+                <br>
+                <label for="guest-message"></label>
+                <br>
+                <textarea name="guest-message" id="guest-message" class="guest-message" placeholder="Number of guests" required></textarea>
+                <br>
+                <button class="submit-btn">Submit</button>
+
+            </div>
+        </form>
+    </main>
     <footer>
         <div class="footer-container">
             <div class="social-icons">
