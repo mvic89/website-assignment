@@ -151,13 +151,13 @@ footer{
 }
 /*Responsivness*/
 
-@media (max-width: 690px) {
+@media (max-width: 702px) {
     .header {
         padding: 1.3rem 5%;
     }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 626px) {
     .icons {
         display: inline-flex;
     }
